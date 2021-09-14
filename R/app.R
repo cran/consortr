@@ -139,10 +139,12 @@ consortr <- function() {
     observeEvent(input$radio, {
       # remove child nodes
       # then, if needs to be split, split
-      react_list$criteria <- DeleteChildren(react_list$criteria, react_list$sel_node)
-      if (!input$radio == NO_SPLIT) {
-        react_list$criteria <- AddChildren(react_list$criteria, react_list$sel_node, 
-                                           input$radio)
+      if (!input$radio %in% react_list$criteria$split_var[react_list$sel_node]){
+        react_list$criteria <- DeleteChildren(react_list$criteria, react_list$sel_node)
+        if (!input$radio == NO_SPLIT) {
+          react_list$criteria <- AddChildren(react_list$criteria, react_list$sel_node, 
+                                             input$radio)
+        }
       }
     })
     observeEvent(input$diagram_click, {

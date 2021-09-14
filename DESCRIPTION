@@ -1,6 +1,6 @@
 Package: consortr
 Title: Interactive Consort Flow Diagrams
-Version: 0.9
+Version: 0.9.1
 Authors@R: 
     person(given = "Daniel",
            family = "Backenroth",
@@ -14,8 +14,8 @@ RoxygenNote: 7.1.1
 Imports: DiagrammeR, shiny, shinydashboard, tibble, dplyr, purrr,
         rlang, magrittr, data.table
 NeedsCompilation: no
-Packaged: 2021-09-12 13:40:05 UTC; dbackenr
+Packaged: 2021-09-14 13:04:59 UTC; dbackenr
 Author: Daniel Backenroth [aut, cre] (<https://orcid.org/0000-0002-9581-8870>)
 Maintainer: Daniel Backenroth <daniel.backenroth@gmail.com>
 Repository: CRAN
-Date/Publication: 2021-09-14 05:50:01 UTC
+Date/Publication: 2021-09-14 16:30:08 UTC
